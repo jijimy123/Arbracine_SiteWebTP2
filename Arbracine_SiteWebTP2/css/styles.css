@@ -1,0 +1,238 @@
+/* Style généraux */
+@charset "utf-8";
+*{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2em;
+}
+
+
+body{
+    padding: 0px 20px 0px 20px;
+    /* Permet d'empêcher le scroll, car j'ai décidé de mettre l'affiche de Ced dans une balise img. l'image dépasse du body donc normalement on aurait pu faire défiler, mais j'empêche ça grâce au overflow : hidden */
+    overflow: hidden;
+    
+}
+
+#global{
+    /*max-width: 1080px;*/
+    
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    /* margin: 0(en haut) auto(a droite) 0(en bas) auto(a gauche) */
+}
+
+h1{
+    font-size: 3em;
+    margin: 0 auto;
+
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+   
+}
+
+#passe{
+    float: right;
+    border-radius: 10px;
+    
+}
+
+#futur{
+    
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#passe{
+    animation-duration: 2s;
+    animation-name: disparitionTexteBackgroundPasse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.75);
+    padding: 2em .5em;
+    
+}
+
+#futur{
+    animation-duration: 2s;
+    animation-name: disparitionTexteBackgroundFutur;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.75);
+    padding: 2em .5em;
+
+}
+
+#passe h2, #futur h2{
+    font-size: 2em;
+    margin: 10px;
+    text-shadow:2px;
+    /*text-shadow: -5px 4px 3px rgba(50,50,50,1);*/
+}
+
+#passe:hover h2, #passe:hover span{
+    color: rgb(39, 118, 236);
+    /*text-shadow: -5px 4px 3px rgba(50,50,50,1);*/
+}
+
+#futur:hover h2, #futur:hover span{
+color: rgb(243, 44, 30);
+}
+
+#futur span,  #passe span{
+    min-width: 265px;
+    display: inline-block;
+}
+
+#accueilArbracine{
+    position: absolute;
+    z-index: -1;
+    top: -30%;
+    right: 0%;
+    
+    animation-name: backgroundPasse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+#retourAccueil{
+    margin: 0 auto;
+    width: 4em;
+    height: 4em;
+    margin-top: -300px;
+    background-color: rgba(255, 255, 255, 0);
+
+    background-image: url("../img/spriteSheetFleches.svg");
+    background-position-x: 0px;
+    background-size: 12em;
+    background-repeat: no-repeat;
+    
+    animation-name: disparitionFleche;
+    animation-direction: alternate-reverse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    cursor: pointer;
+
+
+}
+
+#retourAccueil:hover{
+  background-position-x: -3.97em;
+  
+
+}
+
+#retourAccueil:active{
+    background-position-x: -7.9em;
+}
+
+#menu{
+    position: absolute;
+    text-align: left;
+    width: 9em;
+    list-style: none;
+    margin-top: -1em;
+    
+}
+
+#menu li:nth-of-type(1),#menu li:nth-of-type(2), #menu li:nth-of-type(3){
+    padding: 10px 0px;
+    color: rgba(1,1,1,0);
+    animation-name: disparitionTexteFuturSale;
+    animation-direction: alternate-reverse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes backgroundPasse{
+    from{left: -1300px;}
+    to{left: -2000px;}
+
+}
+
+@keyframes backgroundFutur{
+    from{left: -1300px;}
+    to{left: 0px;}
+    
+}
+
+@keyframes disparitionTexteBackgroundFutur{
+    from{color: rgba(180, 66, 46,1); background-color: rgba(255,255,255,0.75);}
+    to{color: rgba(180, 66, 46,0);   background-color: rgba(255,255,255,0);}
+}
+
+@keyframes disparitionTexteBackgroundPasse{
+    from{color: rgba(0, 13, 197,1); background-color: rgba(255,255,255,0.75);}
+    to{color: rgba(0, 13, 197,0);   background-color: rgba(255,255,255,0);}
+}
+/*rgba(0, 13, 197,1);*/
+
+@keyframes disparitionTexteFuturSale{
+    from{color: rgba(0,0,0,1); margin-left: 1em;}
+    to{color: rgba(0,0,0,0); margin-left: -12em; }
+}
+
+@keyframes disparitionTextePassePropre{
+    from{color: rgba(0,0,0,1); margin-left: 40em;}
+    to{color: rgba(0,0,0,0); margin-left: 28em; }
+}
+
+@keyframes disparitionFleche{
+    from{opacity: 1; }
+    to{opacity: 0;}
+}
+
+@media (max-width:1080px){
+
+    #accueilArbracine{
+        right: -50%;
+    }
+
+}
+
+@media (max-width:750px){
+    
+    #accueilArbracine{
+        width: 3300px;
+        top: -20%;
+    }
+
+    h1{
+        color: red;
+    }
+    
+}
+
+@media (max-width:580px){
+        
+   
+    
+    h1{
+        color: blue;
+        margin: 0 auto;
+        margin-left: -0.8em;
+        margin-left: -120px;
+        width: 600px;
+        font-size: 67px;
+    }
+        
+}
+
+
+
+
+

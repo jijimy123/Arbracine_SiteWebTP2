@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+/* Page #1 (Histoire) */
+
+body {
+	background-color: #5A3A1B;
+	font-family: /*"Fascinate Inline",*/ "arial", sans-serif;
+	font-size: 1.4em;
+    background-image: url(img/arbre_site_web-_passe.png);
+    font-family: 'Bree Serif', serif;
+}
+
+/*------------ H1  titre -------------------*/
+#titre
+{
+	height: 150px;
+	margin: 0 auto;
+	text-align: right;
+	max-width: 1850px;
+    font-family: 'Gugi', cursive;
+}
+
+#titre h1 {
+	font-size: 60px;
+    color: black;
+    float: right;
+	background-color: yellow;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 5px;
+	border: 3px solid black;
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+}
+
+
+/*------------------   BOUTONS    -----------*/
+input {
+    float: right;
+	display: block;
+    color: blue;
+	border-radius: 8px;
+	padding: 5px 10px 5px 10px;
+	border: 3px solid black;
+    font-size: 45px;
+    position: fixed;
+}
+
+input:hover {
+	color: #4072FF;
+    -webkit-box-shadow: inset 0px 0px 10px 1px rgba(9,0,255,1);
+    -moz-box-shadow: inset 0px 0px 10px 1px rgba(9,0,255,1);
+    box-shadow: inset 0px 0px 10px 1px rgba(9,0,255,1);
+}
+
+#accueil {
+    top: 350px;
+    left: 91px;
+    background-image: linear-gradient(#00FFDA, #00FF00);
+    font-family: 'Gugi', cursive;
+}
+
+#futur {
+    padding-right: 35px;
+    padding-left: 35px;
+    top: 600px;
+    left: 91px;
+    background-image: linear-gradient(#00FFDA, #00FF00);
+    font-family: 'Gugi', cursive;
+}
+
+
+
+/*---------------------------------------------------------   Page écran #1 (HISTOIRE)   ----------------------------*/
+
+
+/*------------   ECRAN 1 - Histoire -------*/
+#ecranHistoire {
+    max-width: 1850px;
+    height: 900px;
+	margin: 0 auto;
+    text-align: left;
+}
+
+#ecranHistoire #globalHistoire{
+    margin: 15px 0px 0px 0px;
+    height: 800px;
+	float: right;
+	border-radius: 15px;
+	padding: 30px;
+    width: 78%;
+    background-image: linear-gradient(#00FFDA, yellowgreen, green);
+    /* yellow yellowgreen - green yellowgreen - ETC     -- red green pour le futur...*/
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+  }
+
+#ecranHistoire h2 {
+	float: right;
+	color: #009FE3;
+	background-color: #BE1622;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	margin-left: 1236px;
+	margin-top: -10px;
+    margin-bottom: 17px;
+	border-radius: 15px;
+	border: 3px solid #0022ff;
+	font-size: 56px;
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    font-family: 'Gugi', cursive;
+}
+
+#ecranHistoire #Ppara1 {
+    font-size: 33px;
+    text-align: left;
+    color: #006284;
+    margin-bottom: 20px;
+}
+
+#ecranHistoire #affiche {
+    border-radius: 10px;
+}
+
+/*========================== DÉBUT MEDIA QUERY MOBLIE =====================*/
+/*(680)*/
+@media (max-width: 400px){
+
+    /*---------------   h2  --------------*/
+    #ecranHistoire #h2 {
+        margin-right: 180px;
+        font-size: 32px;
+    }
+        
+}/* fin de media query*/
+
+/*========================== DÉBUT MOYENNE ÉCRANS =====================*/
+
+@media (max-width: 1310px){
+
+    #ecranHistoire {
+        margin-right: 7px;
+    }
+
+	#titre h1 {
+		text-align: center;
+		font-size: 35px;
+	}
+
+	#ecranHistoire h2 {
+		font-size: 32px;
+	}
+
+	#ecranHistoire #globalHistoire{
+		width: 80%;
+        margin-right: 6px;
+	}
+
+    #ecranHistoire #Ppara1 {
+        font-size: 19.5px;
+        margin-bottom: 30px;
+    }
+
+	input.buttonclick01{
+        font-size: 34px;
+		opacity: 0.8;
+        margin-left: -49px;
+        margin-top: 375px;
+	}
+
+	input.buttonclick02 {
+        font-size: 34px;
+		opacity: 0.8;
+        margin-left: 121px;
+        margin-top: 125px; 
+	}
+
+    #futur {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+	
+	#ecranHistoire #affiche {
+		margin-top: -25px;
+		width: 320px;
+		height: 200px;
+	}
+	
+}/* fin de media query*/
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------   Page écran #2 (MÉCANIQUE)   ----------------------------*/
+/*----------------------    Il faut que tu descends un peu ton h2 et ne touche pas les autres pages-écrans SVP   ----------------------------*/
+    
+    /* Create four equal columns that floats next to each other */
+
+
+/*------------   ECRAN 2 - Mécanique -------*/
+#ecranMecaniques
+{
+    max-width: 1850px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+/*-------------   GLOBAL   -----------------*/
+#ecranMecaniques #globalMecaniques
+{
+    float: right;
+    text-align: left;
+    border-radius: 15px;
+    padding: 30px;
+    width: 78%;
+    margin: 15px 0px 0px 0px;
+    height: 800px;        
+    
+    background-image: linear-gradient(green, yellowgreen, #00FFDA);
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+}
+
+#raf{
+
+    margin-bottom: 20px;
+    border-radius: 200px;
+    
+}
+
+#global h2 {
+    float: right;
+    color: #009FE3;
+    background-color: #BE1622;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    margin-left: 1236px;
+    margin-top: -10px;
+    margin-bottom: 17px;
+    border-radius: 15px;
+    border: 3px solid #0022ff;
+    font-size: 56px;
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    font-family: 'Gugi', cursive;
+}
+
+
+#Poster {
+display: inline-block;
+  float: left;
+  width: 380px;
+  padding: 60px;
+  height: 250px; 
+    border-radius: 100px;
+    background-color: lightgreen;
+    margin-left:20px;
+    
+}
+
+#Poster p{
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+
+#Explication {
+display: inline-block;
+  width: 500px;
+  padding: 50px;
+  height: 300px; /* Should be removed. Only for demonstration */
+     border-radius: 200px;
+    background-color: yellowgreen;
+    margin-left: 180px;
+      
+}
+
+#Explication p {
+    
+    font-size: 33px;
+    text-align: center;
+}
+#Choisir {
+  float: left;
+    display: inline-block;
+  width: 400px;
+  padding: 60px;
+  height: 90px; /* Should be removed. Only for demonstration */
+     border-radius: 100px;
+   background-color: seagreen;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+#Choisir p {
+    margin-left: 22px;
+    font-size: 30px;
+    
+    
+}
+
+
+#yao{
+    border-radius: 700px;
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+#Texte p {
+    font-family: cursive;
+    font-size: 30px;
+    
+}
+
+
+
+    
+
+
+@media screen and (max-width: 500px) {
+
+    #ecranMecaniques #globalMecaniques {
+        margin-right: 14px;
+        padding-bottom: 285px;
+
+    }
+    #Poster{
+    width: 200px;
+    height: 150px;
+    margin-left: 0px;
+    }
+    
+    #Poster p {
+        font-size: 40px;
+    }
+    
+    #raf{
+        width:99%;
+        height: 170px;
+
+    }
+    
+    #Explication{
+        margin-top:160px;
+        margin-left: 0px;
+        padding: 0px;
+        height: 200px;
+        width: 300px;
+        display: inline-block;
+            
+    }
+    
+    #Explication p{
+        text-align: center;
+        font-size: 15px;
+        margin: 30px;
+        margin-top: 35px;
+        
+        
+    }
+    
+    #Choisir {
+        padding: 20px;
+        width: 50px;
+        height: 30px;
+    
+        
+        
+    }
+    
+    #Choisir p {
+        font-size:10px;
+        margin-left: 0px;
+        margin-top: -5px;
+    }
+    
+    #yao{
+        margin-left: 20px;;
+        width: 250px;
+        height: 150px;
+        
+    }
+    
+    #Texte p{
+        
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------- Page écran #3 (ÉQUIPE) ----------------------------------------*/
+
+/*------------   ECRAN 3 - Equipe -------*/
+#ecranEquipe{
+    padding-bottom: 25px;
+    display: inline-block;
+    margin-left: 440px;
+    margin-top: 25px;
+    width: 1505px;
+    border-radius: 15px;
+    background-image : linear-gradient(#00FFDA, yellowgreen, green);
+}
+
+.Equipe {
+        padding-top: 15px;
+}
+
+.Membres_M, .Membres_A, .Membres_C, .Equipe h2{
+    text-align: center;
+}
+
+.Equipe h2, .Equipe h3, .Equipe p{
+    border-radius: 5px;
+    color: #000;
+    border: solid black 2px;
+}
+.Equipe h2, .Equipe h3, .Membres_A, .Equipe p{
+    margin: auto;
+}
+
+.Haoyang, .Raph, .Carlos{
+    border-radius: 50%;
+    width: 175px;
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,238,255,1);
+    -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,238,255,1);
+    box-shadow: inset 0px 0px 15px 0px rgba(0,238,255,1);
+}
+
+.Equipe h2{
+    background-color: yellow;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 750px;
+    font-family: 'Gugi', cursive;
+}
+
+.Equipe h3{
+    background-color: #49E6EA;
+    width: 185px;
+    padding: 16px;
+    margin-bottom: 30px;
+}
+
+.Equipe p{
+    background-color: #00C67A;
+    width: 60%;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.Membres_A {
+    left: 50px;
+}
+
+.Membres_C {
+    margin-bottom: 25px;
+}
+
+
+/* ====DÉBUT DE LA MEDIA QUERY (classique min-width : styles GRANDS ÉCRANS)======*/
+@media(min-width: 992px){
+    .Membres_A{
+        margin-top: 10%;
+        margin-left: 35px;
+    }
+    .Membres_M, .Membres_A, .Membres_C{
+        display: inline-block
+    }
+    .Membres_C{
+        float: right;
+        margin-top: 5%;
+        margin-right: 50px; 
+    }
+
+    .Membres_M, .Membres_A, .Membres_C{
+        border-radius: 5px;
+        width: 25%;
+    }
+    .Membres_M{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}/*===fin de la media query===*/
+
+/* ====STYLES MOBILES SEULEMENT (avec max-width) ========*/
+@media(max-width: 991px){
+
+    #ecranEquipe{
+        margin-left: 14px;
+        width: 93%;
+    }
+
+    .Membres_C, .Membres_M{
+        margin-top: 15%;
+        margin-bottom: 40px;
+    }
+
+    .Equipe h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 43px;
+        border-radius: 5px;
+        border: 3px solid black;
+        -webkit-box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+        -moz-box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+        box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+    }
+    
+}/*===fin de la media query===*/
+/*-------------   GLOBAL   -----------------*/
+
