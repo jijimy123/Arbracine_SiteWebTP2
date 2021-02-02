@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+body
+{
+	font-size: 1.4em;
+	height: 100%;
+	width: 100%;
+    background-image: url(img/arbre_site_web_futur.png);
+    font-family: 'Bree Serif', serif;
+}
+
+/*------------ H1  titre -------------------*/
+#titre
+{
+	height: 150px;
+	margin: 0 auto;
+	text-align: left;
+	max-width: 1850px;
+	font-family: 'Black And White Picture', sans-serif;
+}
+
+#titre h1 {
+	font-size: 60px;
+    color: black;
+    float: left;
+	background-color: yellow;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 5px;
+	border: 3px solid black;
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(255,153,0,1);
+}
+
+/*------------------   BOUTONS    -----------*/
+input {
+	float: left;
+	display: block;
+    color: blue;
+	border-radius: 8px;
+	padding: 5px 10px 5px 10px;
+	border: 3px solid black;
+    font-size: 45px;
+	position: fixed;
+
+}
+
+input:hover {
+	color: #4072FF;
+    -webkit-box-shadow: inset 0px 0px 10px 1px rgba(9,0,255,1);
+    -moz-box-shadow: inset 0px 0px 10px 1px rgba(9,0,255,1);
+    box-shadow: inset 0px 0px 10px 1px rgba(9,0,255,1);
+}
+
+#accueil { 
+    top: 350px;
+    right: 91px;
+    background-image: linear-gradient(orange, lightgreen);
+	font-family: 'Chelsea Market', cursive;
+}
+
+#passe {
+    padding-right: 33px;
+    padding-left: 33px;
+    top: 600px;
+    right: 91px;
+    background-image: linear-gradient(orange, lightgreen);
+    font-family: 'Chelsea Market', cursive;
+}
+
+
+
+/*---------------------------------------------------------   Page écran #1 (HISTOIRE)   ----------------------------*/
+
+/*------------   ECRAN 1 - Histoire -------*/
+#ecranHistoire{
+	max-width: 1850px;
+	height: 920px;
+	margin: 0 auto;
+}
+
+/*-------------   GLOBAL   -----------------*/
+#ecranHistoire #globalHistoire {
+	background-image : linear-gradient(red, orange, yellow);
+	margin: 15px 0px 0px 0px;
+    height: 800px;
+	float: left;
+	border-radius: 15px;
+	padding: 30px;
+    width: 78%;
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,115,25,1);
+}
+
+/*--------------------   H2   ----------------*/
+#ecranHistoire #h2Histoire {
+	float: left;
+	color: #009FE3;
+	background-color: #BE1622;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	margin-top: -10px;
+    margin-bottom: 0px;
+	border-radius: 15px;
+	border: 3px solid #0022ff;
+	font-size: 56px;
+    -webkit-box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    -moz-box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    box-shadow: inset 0px 0px 12px 1px rgba(0,34,255,1);
+    font-family: 'Chelsea Market', cursive;
+}
+
+#ecranHistoire #Ppara1 {
+    font-size: 33px;
+    text-align: left;
+    color: #006284;
+    margin-top: 75px;
+}
+
+#affiches{
+    float: right;
+    border-radius: 30px;
+    margin-top: -30px;
+}
+
+
+/*========================== DÉBUT MEDIA QUERY MOBLIE ================*/
+/*(680)*/
+@media (max-width: 480px){
+
+	/*---------------   h2  --------------*/
+	#ecranHistoire #h2Histoire {
+		margin-left: 206px;
+		font-size: 32px;
+	}
+
+    #ecranHistoire #Ppara1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    #affiches {
+        width: 320px;
+        height: 170px;
+        border-radius: 10px;
+        margin-top: 1px;
+    }
+		
+}/* fin de media query*/
+
+
+
+/*========================== DÉBUT MOYENNE ÉCRANS =====================*/
+
+@media (max-width: 1030px){
+
+	#titre h1 {
+		text-align: center;
+		font-size: 55px;
+		margin-bottom: 0px;
+	}
+
+	#ecranHistoire #h2Histoire{
+		margin-left: 190px;
+		font-size: 32px;
+	}
+
+	#ecranHistoire #globalHistoire{
+		width: 80%;
+		font-size: 30px;
+		margin-left: 10px;
+        padding-bottom: 55px;
+        margin-bottom: 15px;
+	}
+
+	input.buttonclick01{
+        font-size: 34px;
+		opacity: 0.8;
+        margin-right: 116px;
+        margin-top: 382px;
+	}
+
+	input.buttonclick02 {
+        font-size: 34px;
+		opacity: 0.8;
+        margin-right: -51px;
+        margin-top: 132px;
+	}
+	
+}/* fin de media query*/
+
+
+
+
+
+
+/*---------------------------------------------------------   Page écran #2 (MÉCANIQUE)   ----------------------------*/
+
+#globalCrafting {
+    max-width: 1850px; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+#h2Mecanique{
+    float: right;
+    color: dimgray;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    margin-top: -10px;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-size: 56px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#principal h3 {
+    float: left;
+    color: midnightblue;
+    background-color: gainsboro;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    margin-right: 1236px;
+    margin-top: -10px;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-size: 50px;
+}
+
+#principal {
+    float: right;
+    text-align: left;
+    border-radius: 15px;
+    padding: 30px;
+    width: 78%;
+    margin-right: 348px;
+    height: 1600px;
+    background-image : linear-gradient(yellow, orange, red);
+}
+
+/***********************  Bulle Crafting   *********************************/
+#crafting{
+    display: inline-block;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 750px;
+    margin-left: 50px;
+}
+
+#affiche{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    width: 100;
+}
+
+div #crafting h3{
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+/***********************  Bulle Matériaux   *********************************/
+#materiaux{
+    display: inline-block;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 500px;
+    margin-left: 875px;
+    margin-top: -450px;
+}
+
+div #materiaux h3{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#mat4{
+    margin-left: 60px;
+}
+
+#materiaux p{
+    margin-left: 50px;
+}
+
+/***********************  Bulle Réalisations   *********************************/
+#realisations{
+    display: inline-block;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+div #realisations h3{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#rea4{
+    margin-left: 60px;
+}
+
+#realisations p{
+    margin-left: 50px;
+}
+
+/***********************  Bulle But - Objectif   *********************************/
+#butObjectif{
+    display: block;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 500px;
+    margin-left: 875px;
+    margin-top: -500px;
+}
+
+div #butObjectif h3{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#butObjectif p{
+    margin-left: 50px;
+}
+
+
+
+/*============================================================ DÉBUT MEDIA QUERY MOBLIE ===================================================*/
+
+@media(max-width: 1180px){
+    
+    #globalCrafting {
+        max-width: 480px; 
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #h2Mecanique{
+        color: dimgray;
+        background-color: black;
+        margin-right: -20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+        border: 3px solid black;
+        font-size: 58px;
+    }
+
+    #principal h3 {
+        float: left;
+        color: midnightblue;
+        background-color: gainsboro;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+        margin-right: 1236px;
+        margin-top: -10px;
+        border-radius: 15px;
+        border: 3px solid black;
+        font-size: 50px;
+    }
+
+    #principal {
+        background-color: gainsboro;
+        border-radius: 15px;
+        padding: 30px;
+        width: 320px;
+        margin-right: 10px;
+        height: 3100px;
+    }
+
+/***********************  Bulle Crafting   *********************************/
+    #crafting{
+        display: inline-block;
+        background-color: antiquewhite;
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 350px;
+        margin-left: -20px;
+    }
+
+    #affiche{
+        margin-left: 15px;
+        margin-bottom: 30px;
+        margin-right: 18px;
+        margin-top: -10px;
+        border-radius: 30px;
+        width: 90%;
+        height: 90%;
+    }
+
+    div #crafting h3{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 14px;
+        font-size: 50px;
+        width: 300px;
+        text-align: center;
+    }
+
+/***********************  Bulle Matériaux   *********************************/
+    #materiaux{
+        display: inline-block;
+        background-color: antiquewhite;
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 350px;
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+
+    div #materiaux h3{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 8px;
+        font-size: 50px;
+        width: 310px;
+        text-align: center;
+    }
+
+    #mat1{
+        margin-left: 10px;
+    }
+    
+    #mat2{
+        margin-left: 10px;
+    }
+    
+    #mat3{
+        margin-left: 30px;
+    }
+    
+    #mat4{
+        margin-left: -10px;
+        margin-bottom: 50px;
+        width: 40%;
+        height: 40%;
+    }
+    
+    #mat5{
+        margin-left: 100px;
+    }
+
+    #materiaux p{
+        margin-left: 50px;
+    }
+
+/***********************  Bulle Réalisations   *********************************/
+    #realisations{
+        display: inline-block;
+        background-color: antiquewhite;
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 350px;
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+
+    div #realisations h3{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 8px;
+        font-size: 50px;
+        width: 310px;
+        text-align: center;
+    }
+    
+    #rea1{
+        margin-left: 10px;
+    }
+    
+    #rea2{
+        margin-left: 10px;
+    }
+    
+    #rea3{
+        margin-left: 10px;
+    }
+    
+    #rea4{
+        margin-left: -30px;
+    }
+    
+    #rea5{
+        margin-left: 80px;
+    }
+
+
+    #realisations p{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+/***********************  Bulle But - Objectif   *********************************/
+    #butObjectif{
+        display: inline-block;
+        background-color: antiquewhite;
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 350px;
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+
+    div #butObjectif h3{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 8px;
+        font-size: 50px;
+        width: 310px;
+        text-align: center;
+    }
+
+    #butObjectif p{
+        margin: 30px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+/*----------------------------------------------------- Page écran #3 (ÉQUIPE) ----------------------------------------*/
+
+/*------------   ECRAN 3 - Equipe -------*/
+
+#ecranEquipe{
+	padding-bottom: 25px;
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 25px;
+    width: 1505px;
+    border-radius: 15px;
+    background-image : linear-gradient(red, orange, yellow);
+}
+
+div #h2Equipe {
+    display: inline-block;
+    margin-left: 670px;
+    margin-top: 15px;
+}
+
+.Membres_M, .Membres_A, .Membres_C, .Equipe h2{
+	text-align: center;
+	
+}
+
+.Equipe h2, .Equipe h3, .Equipe p{
+    border-radius: 5px;
+	color: #000;
+	border: solid black 2px;
+}
+.Equipe h2, .Equipe h3, .Membres_A, .Equipe p{
+    margin: auto;
+}
+
+.Alexis, .Max, .Cedrick{
+    border-radius: 50%;
+	width: 175px;
+	border: solid black 2px;
+}
+
+.Equipe h2, .Equipe h3{
+	width: 150px;
+}
+
+.Equipe h2{
+    background-color: yellow;
+    margin-top: 1665px;
+    margin-left: 120px;
+}
+
+.Equipe h3{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Equipe p{
+    background-color: #ff00008e;
+	width: 60%;
+}
+
+.Membres_A {
+	margin-left: 0px;
+	margin-right: 50px; 
+}
+
+
+/* ====DÉBUT DE LA MEDIA QUERY (classique min-width : styles GRANDS ÉCRANS)======*/
+@media(min-width: 992px){
+
+	.Membres_A, .Membres_C{
+		margin-top: 10%
+	}
+    .Membres_M, .Membres_A, .Membres_C{
+        display: inline-block
+    }
+
+
+    .Membres_M, .Membres_A, .Membres_C{
+        border-radius: 5px;
+        width: 25%;
+    }
+    .Membres_M{
+        margin-right: 5%;
+        margin-left: 7%;
+    } 
+
+}/*===fin de la media query===*/
+
+
+
+/* ====DÉBUT DE LA MEDIA QUERY DOUBLE-CONDITION (appareils midrange uniquement) ========*/
+/* @media(min-width: 481px) and (max-width: 991px){
+
+	body{
+		background-color: pink;
+    }  */
+/*===fin de la media query===*/
+
+
+
+/* ====STYLES MOBILES SEULEMENT (avec max-width) ========*/
+@media(max-width: 991px){
+
+    #ecranEquipe {
+        width: 94.5%;
+        margin-left: 12px;
+    }
+
+    .Membres_C, .Membres_M, .Membres_A{
+        margin-top: 10%;
+    }
+    .Membres_A {
+    	margin-right: 0px;
+    }
+
+    div #h2Equipe {
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 15px;
+    }
+
+
+    
+}/*===fin de la media query===*/
+/*-------------   GLOBAL   -----------------*/
+
